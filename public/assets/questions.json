@@ -1,0 +1,125 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "What is the official language of Brazil?",
+            "correct_answer": "Portugese",
+            "incorrect_answers": [
+                "Brazilian",
+                "Spanish",
+                "English"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "What do the letters in the GMT time zone stand for?",
+            "correct_answer": "Greenwich Mean Time",
+            "incorrect_answers": [
+                "Global Meridian Time",
+                "General Median Time",
+                "Glasgow Man Time"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "When one is &quot;envious&quot;, they are said to be what color?",
+            "correct_answer": "Green",
+            "incorrect_answers": [
+                "Red",
+                "Blue",
+                "Yellow"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "What does a funambulist walk on?",
+            "correct_answer": "A Tight Rope",
+            "incorrect_answers": [
+                "Broken Glass",
+                "Balls",
+                "The Moon"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "Which of the following blood component forms a plug at the site of injuries?",
+            "correct_answer": "Platelets",
+            "incorrect_answers": [
+                "Red blood cells",
+                "White blood cells",
+                "Blood plasma"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "What geometric shape is generally used for stop signs?",
+            "correct_answer": "Octagon",
+            "incorrect_answers": [
+                "Hexagon",
+                "Circle",
+                "Triangle"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "What is the Zodiac symbol for Gemini?",
+            "correct_answer": "Twins",
+            "incorrect_answers": [
+                "Fish",
+                "Scales",
+                "Maiden"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "How many colors are there in a rainbow?",
+            "correct_answer": "7",
+            "incorrect_answers": [
+                "8",
+                "9",
+                "10"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "What is the French word for &quot;fish&quot;?",
+            "correct_answer": "poisson",
+            "incorrect_answers": [
+                "fiche",
+                "escargot",
+                "mer"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "General Knowledge",
+            "question": "In aerodynamics, which force pushes an object upwards?",
+            "correct_answer": "Lift",
+            "incorrect_answers": [
+                "Drag",
+                "Weight",
+                "Thrust"
+            ]
+        }
+    ]
+}
