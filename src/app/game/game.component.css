@@ -1,6 +1,6 @@
 .customProgress .p-progressbar-value {
     font-family: 'Arial', sans-serif;   /* Set the font family */
-    font-size: 8px;                    /* Set the font size */
+    font-size: 10px;                    /* Set the font size */
     font-weight: bold;                  /* Set the font weight */
     color: white;                       /* Set the text color */
 }

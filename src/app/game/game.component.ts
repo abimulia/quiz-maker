@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { FormattedQuestion, Question } from './model/quiz';
 import { GameService } from './service/game.service';
 import { decode } from 'html-entities';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -25,6 +26,7 @@ export class GameComponent implements OnInit{
   progressText = "";
   progressBar = 0;
   classToApply = "";
+  router = inject(Router);
 
   constructor(private gameService: GameService){}
 
@@ -56,7 +58,7 @@ export class GameComponent implements OnInit{
 
   getNewQuestion(){
     if(this.formattedQuestions.length === 0 || this.questionCounter >= this.MAX_QUESTIONS){
-      console.log("End Game");
+      this.router.navigate(['end'],{queryParams:{score: this.score}});
     }
     this.questionCounter++;
     this.progressText = "Question "+ this.questionCounter + " / " + this.MAX_QUESTIONS;
