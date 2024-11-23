@@ -1,10 +1,21 @@
 # QuizMaker
+[![Angular 18.28](https://img.shields.io/badge/JavaScript-Angular-red)](https://github.com/angular/angular-cli)
+[![License](http://img.shields.io/:license-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8. and [PrimeNG](https://primeng.org/) version 17.18.12
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+![image](https://github.com/user-attachments/assets/4b737142-fbfc-42ec-b7d9-0b0e737b6f65)
+
+![image](https://github.com/user-attachments/assets/60fdc961-575d-48a0-86c1-2781fbc0dd61)
+
+![image](https://github.com/user-attachments/assets/09d128cf-5d93-47d9-89f2-4b8b1f6dfc34)
+
+Questions are fetch from `https://opentdb.com/`
+![image](https://github.com/user-attachments/assets/70966430-b415-4376-ba60-067505d0f643)
 
 ## Code scaffolding
 
