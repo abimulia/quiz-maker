@@ -37,7 +37,7 @@ export class GameComponent implements OnInit{
       setTimeout(() => {
         this.loadingQuestion = false;
         this.getNewQuestion();
-      }, 500);
+      }, 1500);
   }
 
   startGame(){
@@ -69,7 +69,6 @@ export class GameComponent implements OnInit{
   }
 
   submitAnswer(selectedChoice: number){
-    console.log("selectedChoice: " + selectedChoice);
     if(selectedChoice == this.currentQuestion?.answer){
       this.score += this.CORRECT_BONUS;
       this.classToApply = "correct";

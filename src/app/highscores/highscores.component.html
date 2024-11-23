@@ -1,1 +1,16 @@
-<p>highscores works!</p>
+<p-card class="flex justify-content-center">
+    <p-card header="High Scores" align="center" class="flex justify-content-center" [style]="{ width: '360px' }">
+        <div class="flex flex-row border-round border-solid m-1 bg-primary" >
+            <p class="w-1">No</p><p class="w-8 ">Name</p><p class="w-3"> Score</p>
+          </div>
+        <div class="flex flex-row m-1" *ngFor="let highScore of highScores; let i = index">
+            <p class="w-1">{{ i + 1 }}</p><p class="w-8 ">{{ highScore.name }}</p><p class="w-3">{{ highScore.score }} </p>
+          </div>
+    </p-card>
+    <div class="flex flex-column align-items-center justify-content-center gap-2 mt-5">
+      <p-button label="Play" class="align-items-center" styleClass="w-10rem" (click)="playGame()"/>
+      <p-button label="Home" styleClass="w-10rem" (click)="goHome()"/>
+    </div>
+  </p-card>
+  
+  

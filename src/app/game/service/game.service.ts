@@ -7,8 +7,8 @@ import { Question } from '../model/quiz';
   providedIn: 'root'
 })
 export class GameService {
-  // private apiUrl = "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple";
-  private apiUrl = "./assets/questions.json";
+  private apiUrl = "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple";
+  // private apiUrl = "./assets/questions.json";
 
   constructor(private http: HttpClient) { }
 
