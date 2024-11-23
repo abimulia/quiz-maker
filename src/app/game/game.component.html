@@ -1,38 +1,67 @@
 <p-card header="Quiz" class="flex justify-content-center">
-    <p-card align="center" class="flex justify-content-center mb-3 pt-0 pb-0" [style]="{ width: '360px' }">
+    @if (loadingQuestion) {
+        <p-card
+        align="center"
+        class="flex justify-content-center mb-3 pt-0 pb-0"
+        [style]="{ width: '360px' }"
+      >
         <div class="flex flex-wrap flex-row justify-content-center mt-0">
-            <div class="flex-1 justify-content-center mt-0" [style]="{ width: '130px' }">
-                <p>Question 2 of 5</p>
-                <p-progressBar [value]="50"/>
-            </div>
-            <div class="flex-1 justify-content-center mt-0" [style]="{ width: '130px' }">
-                <p>Score</p>
-                <p class="mt-1">50</p>
-            </div>
+            <i class="pi pi-spin pi-spinner text-red-500 text-6xl"></i>
         </div>
-       
       </p-card>
-    <p-card header="" align="center" class="flex justify-content-center" [style]="{ width: '360px' }">
-      <p class="mt-5 mb-2">Apakah yang dimaksud dengan Dependency Injection</p>
-    </p-card>
-    <div class="flex flex-column align-items-center justify-content-center gap-2 mt-5 ml-2 mr-2">
-        <div class="flex flex-row w-full border-round border-solid border-primary">
-            <p class="text-center w-1 bg-primary mt-0 mb-0 mr-0">A</p>
-            <p class="w-11 bg-primary-reverse mt-0 mb-0 ml-1">DI adalah</p>
-        </div>
-        <div class="flex flex-row w-full border-round border-solid border-primary">
-            <p class="text-center w-1 bg-primary mt-0 mb-0 mr-0">B</p>
-            <p class="w-11 bg-primary-reverse mt-0 mb-0 ml-1">Teknik injection</p>
-        </div>
-        <div class="flex flex-row w-full border-round border-solid border-primary">
-            <p class="text-center w-1 bg-primary mt-0 mb-0">C</p>
-            <p class="w-11 bg-primary-reverse mt-0 mb-0 ml-1">Bukan apa apa</p>
-        </div>
-        <div class="flex flex-row w-full border-round border-solid border-primary">
-            <p class="text-center w-1 bg-primary mt-0 mb-0">D</p>
-            <p class="w-11 bg-primary-reverse mt-0 mb-0 ml-1">Tidak Tahu</p>
-        </div>
+
+    } @else {
+        <p-card
+    align="center"
+    class="flex justify-content-center mb-3 pt-0 pb-0"
+    [style]="{ width: '360px' }"
+  >
+    <div class="flex flex-wrap flex-row justify-content-center mt-0">
+      <div
+        class="flex-1 justify-content-center mt-0"
+        [style]="{ width: '130px' }"
+      >
+        <p class="font-bold">{{ progressText }}</p>
+        <p-progressBar class="customProgress" [value]="progressBar" />
+      </div>
+      <div
+        class="flex-1 justify-content-center mt-0"
+        [style]="{ width: '130px' }"
+      >
+        <p class="font-bold">Score</p>
+        <p class="mt-1">{{score}}</p>
+      </div>
     </div>
   </p-card>
+  <p-card
+    header=""
+    align="center"
+    class="flex justify-content-center"
+    [style]="{ width: '360px',backgroundColor:'var(--primary-color)',color: 'var(--primary-color-text)' }"
+  >
+    <p class="mt-2 mb-2 font-bold">{{ currentQuestion?.question }}</p>
+  </p-card>
+  <div
+    class="flex flex-column align-items-center justify-content-center gap-2 mt-5 ml-2 mr-2"
+  >
+    <div class="flex flex-row w-full border-round border-solid border-primary" (click)="submitAnswer(1)">
+      <p class="text-center w-1 bg-primary mt-0 mb-0 mr-0">A</p>
+      <p class="w-11 bg-primary-reverse mt-0 mb-0 ml-1">{{ currentQuestion?.choice1 }}</p>
+    </div>
+    <div class="flex flex-row w-full border-round border-solid border-primary" (click)="submitAnswer(2)">
+      <p class="text-center w-1 bg-primary mt-0 mb-0 mr-0">B</p>
+      <p class="w-11 bg-primary-reverse mt-0 mb-0 ml-1"> {{ currentQuestion?.choice2 }}</p>
+    </div>
+    <div class="flex flex-row w-full border-round border-solid border-primary" (click)="submitAnswer(3)">
+      <p class="text-center w-1 bg-primary mt-0 mb-0">C</p>
+      <p class="w-11 bg-primary-reverse mt-0 mb-0 ml-1">{{ currentQuestion?.choice3 }}</p>
+    </div>
+    <div class="flex flex-row w-full border-round border-solid border-primary" (click)="submitAnswer(4)">
+      <p class="text-center w-1 bg-primary mt-0 mb-0">D</p>
+      <p class="w-11 bg-primary-reverse mt-0 mb-0 ml-1">{{ currentQuestion?.choice4 }}</p>
+    </div>
+  </div>
+
+    }
   
-  
+</p-card>
