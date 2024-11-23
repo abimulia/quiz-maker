@@ -18,4 +18,8 @@ export class HomeComponent {
   playGame(){
     this.router.navigate(['game']);
   }
+
+  highscore(){
+    this.router.navigate(['highscore']);
+  }
 }

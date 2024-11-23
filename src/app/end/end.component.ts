@@ -75,7 +75,7 @@ export class EndComponent implements OnInit{
     this.highScores.sort((a: any, b: any) => b.score - a.score);
     this.highScores.splice(10);
     this.localStorageService.set(this.storageKey, JSON.stringify(this.highScores));
-    this.router.navigate(['highscores']);
+    this.router.navigate(['highscore']);
   }
 
   playGame() {
